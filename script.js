@@ -1,3 +1,5 @@
+const render = () => {
+
 const user1SelectorBtn = document.querySelector('#user1-selector');
 const user2SelectorBtn = document.querySelector('#user2-selector');
 const chatHeader = document.querySelector('.chat-header');
@@ -26,8 +28,8 @@ let messageSender = 'User I';
 
 const updateMessageSender = (name) => {
     messageSender = name;
-    chatHeader.innerText = `${messageSender} is Chatting...`;
-    chatInput.placeholder = `Type here, ${messageSender}`;
+    chatHeader.innerText = `${messageSender} esta escribiendo...`;
+    chatInput.placeholder = `Escriba aquí, ${messageSender}`;
 
     if (name === 'User I') {
         user1SelectorBtn.classList.add('active-person');
@@ -41,8 +43,8 @@ const updateMessageSender = (name) => {
     chatInput.focus();
 };
 
-user1SelectorBtn.onclick = () => updateMessageSender('User I');
-user2SelectorBtn.onclick = () => updateMessageSender('User II');
+user1SelectorBtn.onclick = () => updateMessageSender('Usuario I');
+user2SelectorBtn.onclick = () => updateMessageSender('Usuario II');
 
 
 const sendMessage = (e) => {
@@ -69,3 +71,7 @@ clearChatBtn.addEventListener('click', () => {
     localStorage.clear();
     chatMessages.innerHTML = '';
 });
+
+};
+
+document.addEventListener("DOMContentLoaded", render);

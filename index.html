@@ -11,36 +11,22 @@
 <body>
     <section>
 
-        <div class="person-selector">
-            <button class="button person-selector-button active-person" id="user1-selector">User I</button>
-            <button class="button person-selector-button" id="user2-selector">User II</button>
-        </div>
-
         <div class="chat-container">
-            <h2 class="chat-header">User I is Chatthing...</h2>
+            <h2 class="chat-header">Chat</h2>
 
-            <div class="chat-messages">
-
-                <!-- <div class="message red-bg">
-                    <div class="message-sender"> User I</div>
-                    <div class="message-text"> Hey User II, what's up?</div>
-                    <div class="message-timestamp"> 10:30 AM</div>
-                </div>
-
-                <div class="message gray-bg">
-                    <div class="message-sender"> User II</div>
-                    <div class="message-text"> Not much, just living the dream. How about you?</div>
-                    <div class="message-timestamp"> 10:35 AM</div>
-                </div> -->
-
-            </div>
+            <div class="chat-messages"></div>
 
             <form class="chat-input-form">
-                <input type="text" class="chat-input" required placeholder="Type here, User I...">
-                <button type="submit" class="button send-button">Send</button>
+                <input type="text" class="chat-input" required placeholder="Envía un mensaje">
+                <button type="submit" class="button send-button">Enviar</button>
             </form>
-            <button class="button clear-chat-button">Clear Chat</button>
+            <button class="button clear-chat-button">Vaciar chat</button>
 
+        </div>
+
+        <div class="person-selector">
+            <button class="button person-selector-button active-person" id="user1-selector">Usuario I</button>
+            <button class="button person-selector-button" id="user2-selector">Usuario II</button>
         </div>
 
     </section>

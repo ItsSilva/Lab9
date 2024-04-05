@@ -36,8 +36,8 @@ body{
     display: flex;
     justify-content: center;
     gap: 1em;
-    margin: 3em auto 1em;
-    max-width: 40em;
+    margin: 0.625em auto 1em;
+    max-width: 37.5em
 }
 .person-selector-button{
     width: 100%;
@@ -54,7 +54,7 @@ body{
     font-family: 'roboto', sans-serif;
     border-radius: 0.5em;
     padding: 0.5em 1.25em;
-    margin: auto;
+    margin: 0.625em auto;
     max-width: 37.5em;
     height: 37.5em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
