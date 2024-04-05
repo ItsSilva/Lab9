@@ -11,7 +11,7 @@ const clearChatBtn = document.querySelector('.clear-chat-button');
 const messages = JSON.parse(localStorage.getItem('messages')) || [];
 
 const createChatMessageElement = (message) => `
-    <div class="message ${message.sender === 'User I' ? 'red-bg' : 'gray-bg'}"> 
+    <div class="message ${message.sender === 'Usuario I' ? 'red-bg' : 'gray-bg'}"> 
         <div class="message-sender">${message.sender}</div>
         <div class="message-text">${message.text}</div>
         <div class="message-timestamp">${message.timestamp}</div>
@@ -24,18 +24,18 @@ window.onload = () => {
     });
 };
 
-let messageSender = 'User I';
+let messageSender = 'Usuario I';
 
 const updateMessageSender = (name) => {
     messageSender = name;
     chatHeader.innerText = `${messageSender} esta escribiendo...`;
     chatInput.placeholder = `Escriba aquí, ${messageSender}`;
 
-    if (name === 'User I') {
+    if (name === 'Usuario I') {
         user1SelectorBtn.classList.add('active-person');
         user2SelectorBtn.classList.remove('active-person');
     }
-    if (name === 'User II') {
+    if (name === 'Usuario II') {
         user1SelectorBtn.classList.remove('active-person');
         user2SelectorBtn.classList.add('active-person');
     }
